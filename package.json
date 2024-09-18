@@ -1,0 +1,35 @@
+{
+  "name": "@inb/oeb-uptime-chart",
+  "version": "1.0.0",
+  "description": "Standalone widget to display the uptime of a agent at OpenEBench",
+  "main": "build/build.js",
+  "scripts": {
+    "build": "npm install",
+    "prod": "./node_modules/.bin/webpack-cli src/app.js --output=build/build.js -p;",
+    "dev": "./node_modules/.bin/webpack-cli src/app.js --output=build/build.js -d -w;",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vicky Sundesha <me.vicky@hotmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/inab/uptime-chart-OEB"
+  },
+  "keywords": [
+    "visualization",
+    "uptime",
+    "plot",
+    "benchmarking",
+    "openEBench"
+  ],
+  "bugs": {
+    "url": "https://github.com/inab/uptime-chart-OEB/issues"
+  },
+  "homepage": "https://github.com/inab/uptime-chart-OEB"
+}
